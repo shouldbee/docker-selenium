@@ -18,6 +18,9 @@ RUN echo "US/Pacific" | sudo tee /etc/timezone \
 RUN apt-get update -qqy \
   && apt-get -qqy install \
     xvfb \
+    fontconfig \
+    fonts-ipafont-gothic
+  && fc-cache -fv
   && rm -rf /var/lib/apt/lists/*
 
 #==============================
