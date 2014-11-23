@@ -1,4 +1,4 @@
-FROM selenium/node-base:2.44.0
+FROM shouldbee/selenium-node-base:latest
 MAINTAINER Selenium <selenium-developers@googlegroups.com>
 
 USER root
